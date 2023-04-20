@@ -7,10 +7,10 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 export function ParallaxComponents() {
   return (
     <Parallax pages={2} style={{ top: '0', left: '0' }}>
-        <ParallaxLayer offset={0} speed={1}>
+        <ParallaxLayer offset={0} speed={0.85}>
             <div className=' w-[100vw] h-[96vh] bg-black flex items-center justify-center overflow-hidden'></div>
         </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={0.1}>
+      <ParallaxLayer offset={0} speed={0.05}>
         <div className='absolute top-0 left-0 h-[100vh] w-[100vw] flex justify-center items-center -z-10'>
             <div className='title-items flex justify-center items-center -z-10'>
                 <IconBottle className='-mr-9 mb-12 -z-10'/>
@@ -25,18 +25,18 @@ export function ParallaxComponents() {
             </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={0.8}>
+      <ParallaxLayer offset={0} speed={0.65}>
         <div className='absolute overflow-hidden w-[100vw] h-[100vh]'>
           <FlowerOverlay className='absolute -top-5 -right-[40vw] h-[65vh] z-5'/>
           <FlowerOverlay className='absolute -bottom-[30vh] -left-[50vw] h-[65vh] z-5'/>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={1}>
+      <ParallaxLayer offset={0} speed={0.85}>
         <Shoes className='absolute z-20 h-[20vh] bottom-[4.5vh] right-[2vw]'/>
         <Wave className='absolute z-10 bottom-0 left-0 right-0 w-[100vw]'/>
       </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={1}>
-        <div className='bg-[#fce6e7] h-[80vh] w-[100vw] flex-col flex items-center justify-center absolute top-[100vh]'>
+      <ParallaxLayer offset={0} speed={0.85}>
+        <div className='bg-[#fce6e7] h-[80vh] w-[100vw] flex-col flex items-center justify-center absolute top-[100vh] z-0'>
             <div className='h-[100%] w-[65%] flex-col flex items-center justify-around font-[Georgia-Pro] text-center pb-[10vh] italic text-base'>
                 <div>Please join me in celebrating this milestone so I can step into my fifties with my favourite people.</div>
                 <div>
@@ -55,6 +55,23 @@ export function ParallaxComponents() {
                  </iframe>
                 </div>
                 <div>Dress code: from casual to dazzle, sandals to stilettos, diamonds or even a tiara. There's only one rule- rock any outfit you choose.</div>
+            </div>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={0} speed={0.65}>
+        <div className='bg-[#fce6e7] h-[70vh] w-[100vw] flex-col flex items-center justify-center absolute top-[180vh] z-0'>
+            <div className='h-[100%] w-[67%] flex-col flex items-center justify-between text-center pb-[10vh] pt-[10vh]'>
+                <div className='rsvp text-3xl z-10'>RSVP</div>
+                <FlowerOverlay className='absolute top-[2vh] h-[35vh] rotate-12 pr-6'/>
+                <div className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]'>
+                    <div>
+                        <div className='w-[100%] pt-[10%]'>Name</div>
+                        <input type="text" name="" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' />
+                    </div>
+                    <input type="button" value="Coming" className='bg-[#fce6e7] rounded-lg text-sm text-gray-500 w-[40%] pt-2 pb-2'/>
+                    <input type="button" value="Not Coming" className='bg-[#fce6e7] rounded-lg text-sm text-gray-500 pt-2 pb-2 w-[40%] mb-[10%]'/>
+
+                </div>
             </div>
         </div>
       </ParallaxLayer>

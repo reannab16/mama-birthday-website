@@ -24,11 +24,8 @@ function Boo() {
 
 export default function Home() {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden h-[100vh] w-[100%] bg-[#fce6e7]'>
       <ParallaxComponents/>
-      <div className='h-[100vh] w-[100vw] bg-[#fce6e7]'>
-          
-      </div>
     </div>
   )
 }
