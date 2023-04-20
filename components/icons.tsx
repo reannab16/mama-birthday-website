@@ -7,9 +7,9 @@ export function IconBottle({className}:any) {
     )
 }
 
-export function FlowerOverlay({className}:any) {
+export function FlowerOverlay({className}:any, {id}:any) {
     return (
-        <img className={className} src="/3.png" alt="flowers" />
+        <img className={className} src="/3.png" alt="flowers" id={id} />
     )
 }
 
