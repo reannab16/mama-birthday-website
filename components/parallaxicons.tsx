@@ -3,9 +3,13 @@ import { FlowerOverlay, IconBottle, Shoes, Wave } from '@/components/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { SwitchTest } from './radio';
+import Switch from './toggle'
+import { useState } from 'react';
 
 export function ParallaxComponents() {
+
+  const [isToggled, setIsToggled] = useState(false);
+
   return (
     <Parallax pages={2} style={{ top: '0', left: '0' }}>
         <ParallaxLayer offset={0} speed={0.85}>
@@ -67,12 +71,15 @@ export function ParallaxComponents() {
                 <form className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]' action="https://formsubmit.co/reannab16@gmail.com" method="POST">
                     <div>
                         <div className='w-[100%] pt-[10%]'>Name</div>
-                        <input type="text" name="" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' required />
+                        <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' required />
                     </div>
-                    <input type="button" value="Coming" className='bg-[#fce6e7] rounded-lg text-sm text-gray-500 w-[40%] pt-2 pb-2'/>
-                    <input type="button" value="Not Coming" className='bg-[#fce6e7] rounded-lg text-sm text-gray-500 pt-2 pb-2 w-[40%] mb-[10%]'/>
-                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input>
-                    <SwitchTest value={true} onChange={}/>
+                    {/* <input type="hidden" name="_next" value=""></input> */}
+                    {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
+                    <div>
+                      <div>Coming?</div>
+                      <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
+                    </div>
+                    <button type='submit' className='bg-[#fce6e7] h-[34px] w-[60px] rounded-lg mb-[10%]'>Send</button>
 
                 </form>
             </div>
