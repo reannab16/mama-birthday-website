@@ -3,6 +3,7 @@ import { FlowerOverlay, IconBottle, Shoes, Wave } from '@/components/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { SwitchTest } from './radio';
 
 export function ParallaxComponents() {
   return (
@@ -36,7 +37,7 @@ export function ParallaxComponents() {
         <Wave className='absolute z-10 bottom-0 left-0 right-0 w-[100vw]'/>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.85}>
-        <div className='bg-[#fce6e7] h-[80vh] w-[100vw] flex-col flex items-center justify-center absolute top-[100vh] z-0'>
+        <div className='bg-[#fce6e7] h-[85vh] w-[100vw] flex-col flex items-center justify-center absolute top-[100vh] z-0'>
             <div className='h-[100%] w-[65%] flex-col flex items-center justify-around font-[Georgia-Pro] text-center pb-[10vh] italic text-base'>
                 <div>Please join me in celebrating this milestone so I can step into my fifties with my favourite people.</div>
                 <div>
@@ -63,15 +64,17 @@ export function ParallaxComponents() {
             <div className='h-[100%] w-[67%] flex-col flex items-center justify-between text-center pb-[10vh] pt-[10vh]'>
                 <div className='rsvp text-3xl z-10'>RSVP</div>
                 <FlowerOverlay className='absolute top-[2vh] h-[35vh] rotate-12 pr-6'/>
-                <div className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]'>
+                <form className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]' action="https://formsubmit.co/reannab16@gmail.com" method="POST">
                     <div>
                         <div className='w-[100%] pt-[10%]'>Name</div>
-                        <input type="text" name="" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' />
+                        <input type="text" name="" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' required />
                     </div>
                     <input type="button" value="Coming" className='bg-[#fce6e7] rounded-lg text-sm text-gray-500 w-[40%] pt-2 pb-2'/>
                     <input type="button" value="Not Coming" className='bg-[#fce6e7] rounded-lg text-sm text-gray-500 pt-2 pb-2 w-[40%] mb-[10%]'/>
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input>
+                    <SwitchTest value={true} onChange={}/>
 
-                </div>
+                </form>
             </div>
         </div>
       </ParallaxLayer>
