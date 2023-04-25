@@ -9,6 +9,7 @@ import { useState } from 'react';
 export function ParallaxComponents() {
 
   const [isToggled, setIsToggled] = useState(false);
+  console.log(isToggled);
 
   return (
     <Parallax pages={2} style={{ top: '0', left: '0' }}>
@@ -77,7 +78,11 @@ export function ParallaxComponents() {
                     {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                     <div>
                       <div>Coming?</div>
-                      <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
+                      <div className='flex items-center justify-center'>
+                        <span className={`pr-[5px] ${isToggled === false ? "text-[var(--goldish)] italic font-bold" : "text-gray-300"}`}>No</span>
+                        <Switch isToggled={isToggled} onToggle={() => setIsToggled(!isToggled)}/>
+                        <span className={`pl-[5px] ${isToggled === true ? "text-[var(--goldish)] italic font-bold" : "text-gray-300"}`}>Yes</span>
+                      </div>
                     </div>
                     <button type='submit' className='bg-[#fce6e7] h-[34px] w-[60px] rounded-lg mb-[10%]'>Send</button>
 
