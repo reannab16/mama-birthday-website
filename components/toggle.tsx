@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 
-const Switch = ({isToggled, onToggle}) => {
+const Switch = ({isToggled, onToggle}:any) => {
     console.log(onToggle);
     
     return (
