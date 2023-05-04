@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz:wght@200;300&display=swap');
 
 @font-face {
   font-family: "Fifty";
@@ -133,11 +133,24 @@
 }
 
 .counter {
-  height: 13vh;
+  height: 12vh;
   width: 13vw;
   margin: 1.3vw;
-  background-color: #fce6e7;
+  background-color: var(--goldish);
   display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
+  text-align: center;
+  position:relative;
+}
+
+.counter p {
+  position:relative;
+}
+
+.see-you {
+  font-family: 'Yanone Kaffeesatz';
+  font-size: large;
+  font-weight:200;
 }
