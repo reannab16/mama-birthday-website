@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function IconBottle({className}:any) {
     return (
-        <Image className={className} src="/1.svg" alt="bottleSVG" width={100} height={100} />
+        <Image className={className} src="https://github.com/reannab16/mama-birthday-website/blob/main/public/1.svg" alt="bottleSVG" width={100} height={100} />
     )
 }
 
