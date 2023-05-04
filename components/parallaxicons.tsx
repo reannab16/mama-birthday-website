@@ -14,10 +14,10 @@ export function ParallaxComponents() {
   return (
     <Parallax pages={2} style={{ top: '0', left: '0' }}>
         <ParallaxLayer offset={0} speed={0.85}>
-            <div className=' w-[100vw] h-[96vh] bg-black flex items-center justify-center overflow-hidden'></div>
+            <div className=' w-[100vw] h-[96svh] bg-black flex items-center justify-center overflow-hidden'></div>
         </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.05}>
-        <div className='absolute top-0 left-0 h-[100vh] w-[100vw] flex justify-center items-center -z-10'>
+        <div className='absolute top-0 left-0 h-[100svh] w-[100vw] flex justify-center items-center -z-10'>
             <div className='title-items flex justify-center items-center -z-10'>
                 <IconBottle className='-mr-9 mb-12 -z-10'/>
                 <div className='flex flex-col items-center justify-center -ml-8 mt-10'>
@@ -32,18 +32,18 @@ export function ParallaxComponents() {
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.65}>
-        <div className='absolute overflow-hidden w-[100vw] h-[100vh]'>
-          <FlowerOverlay className='absolute -top-5 -right-[40vw] h-[65vh] z-5'/>
-          <FlowerOverlay className='absolute -bottom-[30vh] -left-[50vw] h-[65vh] z-5'/>
+        <div className='absolute overflow-hidden w-[100vw] h-[100svh]'>
+          <FlowerOverlay className='absolute -top-5 -right-[40vw] h-[65svh] z-5'/>
+          <FlowerOverlay className='absolute -bottom-[30svh] -left-[50vw] h-[65svh] z-5'/>
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.85}>
-        <Shoes className='absolute z-20 h-[20vh] bottom-[4.5vh] right-[2vw]'/>
+        <Shoes className='absolute z-20 h-[20svh] bottom-[4.5svh] right-[2vw]'/>
         <Wave className='absolute z-10 bottom-0 left-0 right-0 w-[100vw]'/>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.85}>
-        <div className='bg-[#fce6e7] h-[85vh] w-[100vw] flex-col flex items-center justify-center absolute top-[100vh] z-0'>
-            <div className='h-[100%] w-[65%] flex-col flex items-center justify-around font-[Georgia-Pro] text-center pb-[10vh] italic text-base'>
+        <div className='bg-[#fce6e7] h-[85svh] w-[100vw] flex-col flex items-center justify-center absolute top-[100svh] z-0'>
+            <div className='h-[100%] w-[65%] flex-col flex items-center justify-around font-[Georgia-Pro] text-center pb-[10svh] italic text-base'>
                 <div>Please join me for drinks to celebrate this milestone so I can step into my fifties with my favourite people.</div>
                 <div>
                     <div><FontAwesomeIcon icon={faCalendar} /> Sat May 20th 7:30pm</div>
@@ -65,10 +65,10 @@ export function ParallaxComponents() {
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.65}>
-        <div className='bg-[#fce6e7] h-[70lvh] w-[100vw] flex-col flex items-center justify-center absolute top-[180lvh] z-0'>
-            <div className='h-[100%] w-[67%] flex-col flex items-center justify-between text-center pb-[10lvh] pt-[10lvh]'>
+        <div className='bg-[#fce6e7] h-[70svh] w-[100vw] flex-col flex items-center justify-center absolute top-[180svh] z-0'>
+            <div className='h-[100%] w-[67%] flex-col flex items-center justify-between text-center pb-[10svh] pt-[10svh]'>
                 <div className='rsvp text-3xl z-10'>RSVP</div>
-                <FlowerOverlay className='absolute top-[2lvh] h-[35lvh] rotate-12 pr-6'/>
+                <FlowerOverlay className='absolute top-[2svh] h-[35svh] rotate-12 pr-6'/>
                 <form className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]' action="https://formsubmit.co/reannab16@gmail.com" method="POST">
                     <div>
                         <div className='w-[100%] pt-[10%]'>Name</div>
