@@ -57,7 +57,7 @@ function LoadingScreen({loading}:any) {
       <div className='overflow-hidden h-[100vh] w-[100%] min-[450px]:hidden' onLoad={onLoadCallBack}>
         <ParallaxComponents/>
       </div>
-      <div className='overflow-hidden h-[100vh] w-[100%] max-[400px]:hidden flex flex-col justify-center items-center bg-gray-950 '>
+      <div className='overflow-hidden h-[100vh] w-[100%] max-[450px]:hidden flex flex-col justify-center items-center bg-gray-950 '>
             <div className='title-items flex justify-center items-center'>
                 <IconBottle className='-mr-9 mb-12'/>
                 <div className='flex flex-col items-center justify-center -ml-8 mt-10'>

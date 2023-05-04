@@ -78,7 +78,7 @@ export function ParallaxComponents() {
                         <div className='w-[100%] pt-[10%]'>Name</div>
                         <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[100%] text-gray-400 pl-2 pr-2' placeholder='enter your name here' required />
                     </div>
-                    <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website/"></input>
+                    <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website/countdownpage"></input>
                     <div>
                       <div>Coming?</div>
                       <div className='flex items-center justify-center'>
