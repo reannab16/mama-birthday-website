@@ -72,7 +72,7 @@ export function ParallaxComponents() {
                 <form className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]' action="https://formsubmit.co/bindu.bakshani@gmail.com" method="POST">
                     <div>
                         <div className='w-[100%] pt-[10%]'>Name</div>
-                        <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[100%] text-gray-400' placeholder='enter your name here' required />
+                        <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[100%] text-gray-400 pl-2 pr-2' placeholder='enter your name here' required />
                     </div>
                     <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website"></input>
                     <div>
