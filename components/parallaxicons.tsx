@@ -44,9 +44,9 @@ export function ParallaxComponents() {
       <ParallaxLayer offset={0} speed={0.85}>
         <div className='bg-[#fce6e7] h-[85vh] w-[100vw] flex-col flex items-center justify-center absolute top-[100vh] z-0'>
             <div className='h-[100%] w-[65%] flex-col flex items-center justify-around font-[Georgia-Pro] text-center pb-[10vh] italic text-base'>
-                <div>Please join me in celebrating this milestone so I can step into my fifties with my favourite people.</div>
+                <div>Please join me for drinks to celebrate this milestone so I can step into my fifties with my favourite people.</div>
                 <div>
-                    <div><FontAwesomeIcon icon={faCalendar} /> Sat May 20th 7pm</div>
+                    <div><FontAwesomeIcon icon={faCalendar} /> Sat May 20th 7:30pm</div>
                     <div><FontAwesomeIcon icon={faLocationDot} /> Café Kiku</div>
                 </div>
                 <div>
@@ -74,7 +74,6 @@ export function ParallaxComponents() {
                         <div className='w-[100%] pt-[10%]'>Name</div>
                         <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' required />
                     </div>
-                    <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website/pages/countdown"></input>
                     {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
                     <div>
                       <div>Coming?</div>
