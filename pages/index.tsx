@@ -25,7 +25,23 @@ function Boo() {
 export default function Home() {
   return (
     <div className='overflow-hidden h-[100vh] w-[100%] bg-[#fce6e7]'>
-      <ParallaxComponents/>
+      <div className='overflow-hidden h-[100vh] w-[100%] min-[400px]:hidden'>
+        <ParallaxComponents/>
+      </div>
+      <div className='overflow-hidden h-[100vh] w-[100%] max-[400px]:hidden flex flex-col justify-center items-center bg-gray-950 '>
+            <div className='title-items flex justify-center items-center'>
+                <IconBottle className='-mr-9 mb-12'/>
+                <div className='flex flex-col items-center justify-center -ml-8 mt-10'>
+                <div className='text-[var(--goldish)] font-[fifty] text-8xl'>
+                    fifty
+                </div>
+                <div className='text-white font-[Georgia-Pro] italic -mt-2 tracking-wider mr-1 text-lg'>
+                    is the ultimate 'F' word
+                </div>
+                </div>
+            </div>
+        <div className='text-center w-[80%] font-[Georgia-Pro] flex items-center justify-center max-w-md text-[#fce6e7]'>This website is only accessible on mobile phone because Reanna has exams and ran out of time to build it! Please try open it on a smaller device</div>
+      </div>
     </div>
   )
 }
