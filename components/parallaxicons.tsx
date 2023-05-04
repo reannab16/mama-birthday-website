@@ -5,7 +5,6 @@ import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Switch from './toggle'
 import { useState } from 'react';
-import { CountdownPage } from '@/pages/countdown';
 
 export function ParallaxComponents() {
 
