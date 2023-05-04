@@ -21,7 +21,7 @@ export function ParallaxComponents() {
             <div className='title-items flex justify-center items-center -z-10'>
                 <IconBottle className='-mr-9 mb-12 -z-10'/>
                 <div className='flex flex-col items-center justify-center -ml-8 mt-10'>
-                <div className='text-[var(--goldish)] font-[fifty] text-8xl'>
+                <div className='text-[var(--goldish)] font-[fifty] text-8xl' >
                     fifty
                 </div>
                 <div className='text-white font-[Georgia-Pro] italic -mt-2 tracking-wider mr-1'>

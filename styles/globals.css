@@ -70,3 +70,29 @@
 .switch input:checked + .slider {
   background-color: var(--goldish);
 }
+
+.preloader {
+  background: linear-gradient(0deg, #000, #ec818c, #fce6e7);
+  background-size: 600% 600%;
+
+  -webkit-animation: Gradient 5s ease-in-out infinite;
+  -moz-animation: Gradient 5s ease-in-out infinite;
+  animation: Gradient 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0%{background-position:51% 0%}
+  25%{background-position:50% 75%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-moz-keyframes Gradient {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@keyframes Gradient {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}

@@ -7,7 +7,8 @@ import { Shoes } from '@/components/icons';
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { ParallaxComponents } from '@/components/parallaxicons';
 import { useEffect, useState } from "react";
-import { LoadingScreen} from "@/components/LoadingScreen";
+import { Loader } from '@/components/loader';
+// import { LoadingScreen} from "@/components/LoadingScreen";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,19 +26,32 @@ function Boo() {
 }
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
-  if (loading) return <LoadingScreen />;
+  const [loading, setLoading] = useState(true);
+
+function onLoadCallBack() {
+  setTimeout(() => {
+    setLoading(false);
+    console.log(loading);
+  }, 2000);
+  console.log('yeyeboi')
+}
+
+function LoadingScreen({loading}:any) {
+  if (loading) return (
+      <Loader/>
+  );
+
+  else return (
+      <div className="h-0 w-0"></div>
+  )
+}
+
+
   return (
     <div className='overflow-hidden h-[100vh] w-[100%] bg-[#fce6e7]'>
-      <div className='preloader'></div>
-      <div className='overflow-hidden h-[100vh] w-[100%] min-[400px]:hidden'>
+      <LoadingScreen loading={loading}/>
+      <div className='overflow-hidden h-[100vh] w-[100%] min-[400px]:hidden' onLoad={onLoadCallBack}>
         <ParallaxComponents/>
       </div>
       <div className='overflow-hidden h-[100vh] w-[100%] max-[400px]:hidden flex flex-col justify-center items-center bg-gray-950 '>
