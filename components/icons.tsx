@@ -25,3 +25,9 @@ export function Shoes({className}:any) {
     )
 }
 
+export function Glasses({className}:any) {
+    return (
+        <Image className={className} src="glasses.svg" alt="bottleSVG" width={80} height={80} />
+    )
+}
+

@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Glasses } from "@/components/icons";
 
 export default function countdown() {
 
@@ -37,12 +38,12 @@ export default function countdown() {
 
 
     return (
-        <div className='overflow-hidden h-[100vh] w-[100%] bg-black text-lg flex flex-col items-center justify-center text-[#fce6e7] text-center'>
-          <div className='mb-5'>
-
-            <div className='see-you'>see you soon!</div>
+        <div className='overflow-hidden h-[100svh] w-[100%] bg-black text-lg flex flex-col items-center justify-center text-[#fce6e7] text-center'>
+          <div className='mb-5 flex flex-col justify-center items-center text-center'>
+            <Glasses className='h-[20svh]'/>
+            <div className='see-you -mt-[2svh]'>see you soon!</div>
           </div>
-          <div className='flex justify-center items-center text-white text-xl'>
+          <div className='flex justify-center items-center text-white text-xl mb-[7svh]'>
             <div className="counter-container justify-center">
                 <span className="counter justify-center">{days}</span>
                 <span className="text-xs">days</span>
