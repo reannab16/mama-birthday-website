@@ -34,9 +34,9 @@ export default function Home() {
 function onLoadCallBack() {
   setTimeout(() => {
     setLoading(false);
-    console.log(loading);
+    // console.log(loading);
   }, 3000);
-  console.log('yeyeboi')
+  // console.log('yeyeboi')
 }
 
 function LoadingScreen({loading}:any) {
@@ -53,7 +53,8 @@ function LoadingScreen({loading}:any) {
   return (
     <div className='overflow-hidden h-[100vh] w-[100%] bg-[#fce6e7]'>
       <LoadingScreen loading={loading}/>
-      <div className='overflow-hidden h-[100vh] w-[100%] min-[350px]:hidden' onLoad={onLoadCallBack}>
+      <CountdownPage submitted={submitted}/>
+      <div className='overflow-hidden h-[100vh] w-[100%] min-[450px]:hidden' onLoad={onLoadCallBack}>
         <ParallaxComponents/>
       </div>
       <div className='overflow-hidden h-[100vh] w-[100%] max-[400px]:hidden flex flex-col justify-center items-center bg-gray-950 '>
@@ -69,9 +70,6 @@ function LoadingScreen({loading}:any) {
                 </div>
             </div>
         <div className='text-center w-[80%] font-[Georgia-Pro] flex items-center justify-center max-w-md text-[#fce6e7]'>This website is only accessible on mobile phone because Reanna has exams and ran out of time to build it! Please try open it on a smaller device or reduce your browser width</div>
-      </div>
-      <div>
-        <CountdownPage submitted={submitted}/>
       </div>
     </div>
   )

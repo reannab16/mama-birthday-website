@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 const Switch = ({isToggled, onToggle}:any) => {
-    console.log(onToggle);
+    // console.log(onToggle);
     
     return (
         <label className='switch relative inline-block w-[60px] h-[34px]'>

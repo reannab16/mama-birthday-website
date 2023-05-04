@@ -9,7 +9,7 @@ import { useState } from 'react';
 export function ParallaxComponents() {
 
   const [isToggled, setIsToggled] = useState(false);
-  console.log(isToggled);
+  // console.log(isToggled);
   const [submitted, setSubmitted] = useState(false)
   function clickyclicky() {
     setSubmitted(true);
