@@ -6,6 +6,8 @@ import { Wave } from '@/components/icons';
 import { Shoes } from '@/components/icons';
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { ParallaxComponents } from '@/components/parallaxicons';
+import { useEffect, useState } from "react";
+import { LoadingScreen} from "@/components/LoadingScreen";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,8 +25,18 @@ function Boo() {
 }
 
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading) return <LoadingScreen />;
   return (
     <div className='overflow-hidden h-[100vh] w-[100%] bg-[#fce6e7]'>
+      <div className='preloader'></div>
       <div className='overflow-hidden h-[100vh] w-[100%] min-[400px]:hidden'>
         <ParallaxComponents/>
       </div>

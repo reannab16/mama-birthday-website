@@ -24,3 +24,4 @@ export function Shoes({className}:any) {
         <img className={className} src="shoes.png" alt="shoes with pink feathers" />
     )
 }
+
