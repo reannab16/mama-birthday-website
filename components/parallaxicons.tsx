@@ -5,11 +5,16 @@ import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Switch from './toggle'
 import { useState } from 'react';
+import { CountdownPage } from '@/pages/countdown';
 
 export function ParallaxComponents() {
 
   const [isToggled, setIsToggled] = useState(false);
   console.log(isToggled);
+  const [submitted, setSubmitted] = useState(false)
+  function clickyclicky() {
+    setSubmitted(true);
+  }
 
   return (
     <Parallax pages={2} style={{ top: '0', left: '0' }}>
@@ -74,7 +79,7 @@ export function ParallaxComponents() {
                         <div className='w-[100%] pt-[10%]'>Name</div>
                         <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[100%] text-gray-400 pl-2 pr-2' placeholder='enter your name here' required />
                     </div>
-                    <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website/pages/countdown.tsx"></input>
+                    <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website/"></input>
                     <div>
                       <div>Coming?</div>
                       <div className='flex items-center justify-center'>
@@ -83,7 +88,7 @@ export function ParallaxComponents() {
                         <span className={`pl-[5px] ${isToggled === true ? "text-[var(--goldish)] italic font-bold" : "text-gray-300"}`}>Yes</span>
                       </div>
                     </div>
-                    <button type='submit' className='bg-[#fce6e7] h-[34px] w-[60px] rounded-lg mb-[10%]'>Send</button>
+                    <button type='submit' className='bg-[#fce6e7] h-[34px] w-[60px] rounded-lg mb-[10%]' onClick={clickyclicky}>Send</button>
 
                 </form>
             </div>
