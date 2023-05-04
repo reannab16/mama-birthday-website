@@ -66,7 +66,7 @@ function LoadingScreen({loading}:any) {
                 </div>
                 </div>
             </div>
-        <div className='text-center w-[80%] font-[Georgia-Pro] flex items-center justify-center max-w-md text-[#fce6e7]'>This website is only accessible on mobile phone because Reanna has exams and ran out of time to build it! Please try open it on a smaller device</div>
+        <div className='text-center w-[80%] font-[Georgia-Pro] flex items-center justify-center max-w-md text-[#fce6e7]'>This website is only accessible on mobile phone because Reanna has exams and ran out of time to build it! Please try open it on a smaller device or reduce your browser width</div>
       </div>
     </div>
   )

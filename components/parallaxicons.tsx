@@ -69,12 +69,12 @@ export function ParallaxComponents() {
             <div className='h-[100%] w-[67%] flex-col flex items-center justify-between text-center pb-[10svh] pt-[10svh]'>
                 <div className='rsvp text-3xl z-10'>RSVP</div>
                 <FlowerOverlay className='absolute top-[2svh] h-[35svh] rotate-12 pr-6'/>
-                <form className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]' action="https://formsubmit.co/reannab16@gmail.com" method="POST">
+                <form className='h-[75%] w-[95%] bg-white rounded-3xl z-10 flex items-center justify-around flex-col font-[Georgia-Pro]' action="https://formsubmit.co/bindu.bakshani@gmail.com" method="POST">
                     <div>
                         <div className='w-[100%] pt-[10%]'>Name</div>
-                        <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[95%] text-gray-400' placeholder='enter your name here' required />
+                        <input type="text" name="name" id="" className='bg-[#fce6e7] rounded-lg text-xs h-6 text-center w-[100%] text-gray-400' placeholder='enter your name here' required />
                     </div>
-                    {/* <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"></input> */}
+                    <input type="hidden" name="_next" value="https://reannab16.github.io/mama-birthday-website"></input>
                     <div>
                       <div>Coming?</div>
                       <div className='flex items-center justify-center'>
