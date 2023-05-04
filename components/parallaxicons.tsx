@@ -10,10 +10,6 @@ export function ParallaxComponents() {
 
   const [isToggled, setIsToggled] = useState(false);
   // console.log(isToggled);
-  const [submitted, setSubmitted] = useState(false)
-  function clickyclicky() {
-    setSubmitted(true);
-  }
 
   return (
     <Parallax pages={2} style={{ top: '0', left: '0' }}>
@@ -87,7 +83,7 @@ export function ParallaxComponents() {
                         <span className={`pl-[5px] ${isToggled === true ? "text-[var(--goldish)] italic font-bold" : "text-gray-300"}`}>Yes</span>
                       </div>
                     </div>
-                    <button type='submit' className='bg-[#fce6e7] h-[34px] w-[60px] rounded-lg mb-[10%]' onClick={clickyclicky}>Send</button>
+                    <button type='submit' className='bg-[#fce6e7] h-[34px] w-[60px] rounded-lg mb-[10%]'>Send</button>
 
                 </form>
             </div>

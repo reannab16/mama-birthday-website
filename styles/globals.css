@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz:wght@300&display=swap');
 
 @font-face {
   font-family: "Fifty";
@@ -28,29 +29,6 @@
   }
 }
 
-/* div {
-  border: solid red 2px;
-} */
-
-/* .wrapper {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.header {
-  transform-style: preserve-3d;
-  perspective: 10px;
-  position: relative;
-}
-
-.header-flowers {
-  transform: translateZ(-5px);
-}
-
-.title-items {
-  transform: translateZ(-10px) scale(2);
-} */
-
 .rsvp {
   font-family: 'Bebas Nueue';
 }
@@ -70,32 +48,6 @@
 .switch input:checked + .slider {
   background-color: var(--goldish);
 }
-
-/* .preloader {
-  background: linear-gradient(0deg, #ed7781, #fce6e7);
-  background-size: 200% 200%;
-
-  -webkit-animation: Gradient 5s ease-in-out infinite;
-  -moz-animation: Gradient 5s ease-in-out infinite;
-  animation: Gradient 5s ease-in-out infinite;
-}
-
-@-webkit-keyframes Gradient {
-  0%{background-position:50% 0%}
-  25%{background-position:50% 75%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-}
-@-moz-keyframes Gradient {
-  0%{background-position:50% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-}
-@keyframes Gradient {
-  0%{background-position:50% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-} */
 
 .heart:before , .heart:after {
   position: absolute;
@@ -178,4 +130,14 @@
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
+}
+
+.counter {
+  height: 13vh;
+  width: 13vw;
+  margin: 1.3vw;
+  background-color: #fce6e7;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }

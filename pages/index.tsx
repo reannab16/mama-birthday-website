@@ -8,7 +8,6 @@ import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { ParallaxComponents } from '@/components/parallaxicons';
 import { useEffect, useState } from "react";
 import { Loader } from '@/components/loader';
-import { CountdownPage } from '@/components/countdown';
 // import { LoadingScreen} from "@/components/LoadingScreen";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -53,7 +52,6 @@ function LoadingScreen({loading}:any) {
   return (
     <div className='overflow-hidden h-[100vh] w-[100%] bg-[#fce6e7]'>
       <LoadingScreen loading={loading}/>
-      <CountdownPage submitted={submitted}/>
       <div className='overflow-hidden h-[100vh] w-[100%] min-[450px]:hidden' onLoad={onLoadCallBack}>
         <ParallaxComponents/>
       </div>
